@@ -1,13 +1,16 @@
-numero_1=ARGV[0].to_i
-numero_2=ARGV[1].to_i
-numero_3=ARGV[2].to_i
+number_1=ARGV[0].to_i
+number_2=ARGV[1].to_i
+number_3=ARGV[2].to_i
 
-if numero_1 > numero_2 && numero_1 > numero_3
-    puts numero_1
-elsif numero_2 > numero_1 && numero_2 > numero_3
-    puts numero_2
+if number_1 > number_2 && number_1 > number_3
+    puts number_1 
+    puts "Excellent"
+elsif number_2 > number_1 && number_2 > number_3
+    puts number_2
+    
 else 
-    puts numero_3
+    puts number_3
+    puts "Awesome"
 
 end
 
