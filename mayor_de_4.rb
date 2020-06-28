@@ -1,30 +1,31 @@
-a = ARGV[0].to_i
-b = ARGV[1].to_i
-c = ARGV[2].to_i
-d = ARGV[3].to_i
+number_1=ARGV[0].to_i
+number_2=ARGV[1].to_i
+number_3=ARGV[2].to_i
+number_4=ARGV[3].to_i
 
-if a > b && a > c && a > d
-    puts "#{a}" 
+if number_4 == 0
+
+    if number_1 > number_2 && number_1 > number_3 
+    puts number_1 
     
-elsif b > a && b > c && b > d
-    puts "#{b}"
+    elsif number_2 > number_1 && number_2 > number_3 
+    puts number_2
     
-elsif c > a && c > b && c > d
-    puts "#{c}"
+    else
+    puts number_3
 
-elsif d > a && d > b && d > c
-    puts "#{d}"
     
 
-end
-
-if d == nil
-    if a > b && a > c
-        puts "#{a}"
-    elsif b > a && b > c
-        puts "#{b}"
-    elsif c > a && c > b
-        puts "#{c}"
     end
+
+
+    elsif number_1 > number_2 && number_1 > number_3 && number_1 > number_4
+        puts number_1
+    elsif number_2 > number_1 && number_2 > number_3 && number_2 > number_4
+        puts number_2
+    elsif number_3 > number_1 && number_3 > number_2 && number_3 >  number_4
+        puts number_3
+    else 
+        puts number_4
 end
 
